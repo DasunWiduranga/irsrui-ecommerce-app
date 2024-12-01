@@ -1,0 +1,17 @@
+React DOM
+npm install react react-dom
+
+React Router
+npm install react-router-dom
+
+Material-UI 
+npm install @mui/material @emotion/react @emotion/styled
+
+Formik and Yup
+npm install formik yup
+
+dependencies for development
+npm install eslint prettier --save-dev
+
+MUI-Icon
+npm install @mui/icons-material
