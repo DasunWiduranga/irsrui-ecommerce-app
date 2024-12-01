@@ -10,21 +10,21 @@ const products = [
   {
     id: 1,
     name: "Product 1",
-    price: 1000,
+    price: 1000.00,
     description: "This is sample 1",
     image: img1,
   },
   {
     id: 2,
     name: "Product 2",
-    price: 550,
+    price: 550.00,
     description: "This is sample 2",
     image:img2,
   },
   {
     id: 3,
     name: "Product 3",
-    price: 150,
+    price: 150.00,
     description: "This is sample 3",
     image: img3,
   },
@@ -32,7 +32,7 @@ const products = [
   {
     id: 4,
     name: "Product 4",
-    price: 100,
+    price: 100.00,
     description: "This is sample 4",
     image: img4,
   },
@@ -40,7 +40,7 @@ const products = [
   {
     id: 5,
     name: "Product 5",
-    price: 60,
+    price: 60.00,
     description: "This is sample 5",
     image: img5,
   },
@@ -48,7 +48,7 @@ const products = [
   {
     id: 6,
     name: "Product 6",
-    price: 1000,
+    price: 1000.00,
     description: "This is sample 6",
     image: img6,
   },

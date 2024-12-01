@@ -17,7 +17,7 @@ const ProductCard = ({ product }) => {
       <CardContent>
         <Typography variant="h6">{product.name}</Typography>
         <Typography variant="body2">{product.description}</Typography>
-        <Typography variant="body1">${product.price}</Typography>
+        <Typography variant="body1">Rs{product.price}</Typography>
         <Button
           variant="contained"
           color="primary"

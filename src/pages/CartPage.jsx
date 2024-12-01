@@ -40,7 +40,7 @@ const CartPage = () => {
                       }}
                     />
                     <Typography variant="h6">{item.name}</Typography>
-                    <Typography>Price: ${item.price}</Typography>
+                    <Typography>Price: Rs{item.price}</Typography>
                     <Typography>Quantity:</Typography>
                     <TextField
                       type="number"
@@ -69,7 +69,7 @@ const CartPage = () => {
             gutterTop
             style={{ marginTop: "20px" }}
           >
-            Total: ${calculateTotal(cart).toFixed(2)}
+            Total: Rs{calculateTotal(cart).toFixed(2)}
           </Typography>
         </>
       )}
