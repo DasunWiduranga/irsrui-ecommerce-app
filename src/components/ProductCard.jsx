@@ -6,10 +6,11 @@ const ProductCard = ({ product }) => {
   const { addToCart } = useCart();
 
   return (
-    <Card>
+    <Card style={{ marginBottom: "10px" }}>
       <CardMedia
         component="img"
-        height="140"
+        height="400"
+        width="auto"
         image={product.image}
         alt={product.name}
       />

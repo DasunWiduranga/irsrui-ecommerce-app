@@ -17,7 +17,7 @@ const CartPage = () => {
   return (
     <Container>
       <Typography variant="h4" align="center" gutterBottom>
-        Your Shopping Cart
+         Shopping Cart
       </Typography>
       {cart.length === 0 ? (
         <Typography align="center">Your cart is empty.</Typography>
@@ -28,13 +28,26 @@ const CartPage = () => {
               <Grid item xs={12} sm={6} md={4} key={item.id}>
                 <Card>
                   <CardContent>
+                    <img
+                      src={item.image}
+                      alt={item.name}
+                      style={{
+                        width: "auto",
+                        height: "auto",
+                        maxHeight: "200px",
+                        objectFit: "contain",
+                        marginBottom: "10px",
+                      }}
+                    />
                     <Typography variant="h6">{item.name}</Typography>
                     <Typography>Price: ${item.price}</Typography>
                     <Typography>Quantity:</Typography>
                     <TextField
                       type="number"
                       value={item.quantity}
-                      onChange={(e) => updateQuantity(item.id, parseInt(e.target.value, 10))}
+                      onChange={(e) =>
+                        updateQuantity(item.id, parseInt(e.target.value, 10))
+                      }
                       inputProps={{ min: 1 }}
                     />
                     <Button
@@ -50,7 +63,12 @@ const CartPage = () => {
               </Grid>
             ))}
           </Grid>
-          <Typography variant="h5" align="right" gutterTop style={{ marginTop: "20px" }}>
+          <Typography
+            variant="h5"
+            align="right"
+            gutterTop
+            style={{ marginTop: "20px" }}
+          >
             Total: ${calculateTotal(cart).toFixed(2)}
           </Typography>
         </>
